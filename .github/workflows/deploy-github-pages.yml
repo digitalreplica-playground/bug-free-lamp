@@ -34,5 +34,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           npm install
-          npm run lint
           npm run ng -- deploy --base-href='/bug-free-lamp/' --name="deploy-bot" --email=deploybot@example.org
