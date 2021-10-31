@@ -31,7 +31,7 @@ jobs:
           node-version: 12.x
       - name: Prepare and deploy
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install
           npm run ng -- deploy --base-href='/bug-free-lamp/' --name="deploy-bot" --email=deploybot@example.org
