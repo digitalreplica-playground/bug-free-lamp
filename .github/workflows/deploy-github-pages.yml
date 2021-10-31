@@ -35,4 +35,4 @@ jobs:
         run: |
           npm install
           npm run lint
-          npm run ng -- deploy --base-href=${{ REPO_HREF }} --name="deploy-bot" --email=deploybot@example.org
+          npm run ng -- deploy --base-href='/bug-free-lamp/' --name="deploy-bot" --email=deploybot@example.org
